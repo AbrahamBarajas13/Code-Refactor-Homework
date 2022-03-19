@@ -1,30 +1,36 @@
+/* pushes content to the edges */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* changes background color to white */
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* adds padding, font color, background color, and allows for a variety of font styles */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* allws the title inside the headers to have elements */
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* allows the seo in the title to fade */
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* moves the tags to the right */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,24 +38,29 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+/*changes navigating header to style type none */
+header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+/* changes navigation headbar display to inline block and adds margin to the left */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* takes away the url underline and blue */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* changes paragraph fonts */
 p {
     font-size: 16px;
 }
 
+/* image properties specifically for the middle image */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +70,89 @@ p {
     background-position: center;
 }
 
+/* Moves it to the left of container and adds padding to the right */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Moves it to the right of container and adds padding to the left */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Moves the content containers float next to the benefits container */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* adds space and color to the background and font to the */
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* adds max-height to search engine image */
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+/* adds space to the bottom and changes font size to search engine header */
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* elements for online reputation section */
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* addds max-height to online reputation image */
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+/* adds space to the bottom and changes font size to online reputation management header */
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* All elements for social media sction */
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* adds max-height to social media marketing imgage */
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+/* adds space to the bottom and changes font size to social media marketing header */
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* gives the benefits container padding and to make sure that it stays unmerged */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,115 +164,72 @@ p {
     background-color: #2589bd;
 }
 
+/* adds margin to the bottom and white to benefit-lead */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
+/* changes display to block style, adds space to the bottom and sets a max-width to image */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* adds space to the bottom and aligns text to the center to benefit-lead h3 */
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* adds space to the bottom and white font to the benefit-brand sections */
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* changes display to block style, adds space to the bottom and sets max-width to image */
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* adds space to the bottom and aligns text to the center to benefit-brand h3 */
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* adds space to the bottom and white font to benefit-cost sections */
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* changes display to block style, adds space to the bottom and sets max-width to imgage */
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/* adds space to the bottom and aligns text to the center to benefit-cost h3 */
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* body of the footer elements */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* changes font size to the footer's header */
+footer h2 {
     font-size: 20px;
 }
